@@ -3,7 +3,7 @@ import 'dart:math';
 class DailyWeatherData {
   final DateTime timestamp;
   final int temperatureLow;
-  final int tempuratureHigh;
+  final int temperatureHigh;
   final int windHigh;
   final int windLow;
   final double preciptiation;
@@ -12,7 +12,7 @@ class DailyWeatherData {
 
   DailyWeatherData({
     required this.timestamp,
-    required this.tempuratureHigh,
+    required this.temperatureHigh,
     required this.temperatureLow,
     required this.windHigh,
     required this.windLow,
@@ -24,7 +24,7 @@ class DailyWeatherData {
   static DailyWeatherData genDailyWeather(DateTime timestamp) {
     return DailyWeatherData(
       timestamp: timestamp,
-      tempuratureHigh: Random().nextInt(25),
+      temperatureHigh: Random().nextInt(25),
       temperatureLow: Random().nextInt(12),
       windHigh: Random().nextInt(18),
       windLow: Random().nextInt(4),
